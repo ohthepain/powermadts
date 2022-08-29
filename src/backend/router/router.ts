@@ -1,7 +1,7 @@
 import { createRouter } from "./context";
 import { z } from "zod";
 
-export const exampleRouter = createRouter()
+export const myRouter = createRouter()
   .query("hello", {
     input: z
       .object({

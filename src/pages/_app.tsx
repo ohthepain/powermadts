@@ -4,7 +4,7 @@ import { loggerLink } from "@trpc/client/links/loggerLink";
 import { withTRPC } from "@trpc/next";
 import type { AppType } from "next/dist/shared/lib/utils";
 import superjson from "superjson";
-import type { AppRouter } from "../server/router";
+import type { AppRouter } from "../backend/router";
 import "tailwindcss/tailwind.css"
 import "../styles/globals.css"
 
@@ -21,7 +21,7 @@ const getBaseUrl = () => {
 export default withTRPC<AppRouter>({
   config() {
     /**
-     * If you want to use SSR, you need to use the server's full URL
+     * If you want to use SSR, you need to use the backend's full URL
      * @link https://trpc.io/docs/ssr
      */
     const url = `${getBaseUrl()}/api/trpc`;

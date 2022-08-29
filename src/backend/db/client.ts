@@ -1,4 +1,4 @@
-// src/server/db/client.ts
+// src/backend/db/client.ts
 import { PrismaClient } from "@prisma/client";
 import { env } from "../../env/server.mjs";
 
